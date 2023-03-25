@@ -21,5 +21,10 @@ pipeline {
                 sh './jenkins/scripts/test.sh'
             }
         }
+        stage('Just Like that') {
+            steps {
+                echo "helloz  - is it going fine  ? "
+            }
+        }
     }
 }
