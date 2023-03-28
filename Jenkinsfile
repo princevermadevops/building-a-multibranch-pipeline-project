@@ -26,7 +26,7 @@ pipeline {
                 echo "helloz  - is it going fine  ? "
             }
         }
-    stage('Deliver for development') {
+        stage('Deliver for development') {
             when {
                 branch 'development' 
             }
@@ -36,7 +36,7 @@ pipeline {
                 sh './jenkins/scripts/kill.sh'
             }
         }
-    stage('Deploy for production') {
+        stage('Deploy for production') {
             when {
                 branch 'production'  
             }
